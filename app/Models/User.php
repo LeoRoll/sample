@@ -51,4 +51,17 @@ class User extends Authenticatable
     {
         $this->notify(new ResetPassword($token));
     }
+
+    /*模型关联*/
+    public function statuses()
+    {
+        return $this->hasMany(Status::class);
+    }
+
+    /*动态流原型*/
+    public function feed()
+    {
+        return $this->statuses()
+                    ->orderBy('created_at', 'desc');
+    }
 }
