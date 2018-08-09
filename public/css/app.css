@@ -8406,14 +8406,6 @@ p {
   background-color: #3c3e42;
 }
 
-#logout {
-  cursor: default;
-}
-
-#logout:hover {
-  background-color: transparent;
-}
-
 #logo {
   float: left;
   margin-right: 10px;
@@ -8429,6 +8421,14 @@ p {
   color: #fff;
 }
 
+#logout {
+  cursor: default;
+}
+
+#logout:hover {
+  background-color: transparent;
+}
+
 /* footer */
 
 footer {
@@ -8436,8 +8436,6 @@ footer {
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #777;
-  /* sidebar */
-  /* forms */
 }
 
 footer a {
@@ -8472,60 +8470,120 @@ footer .slogon {
   font-weight: bold;
 }
 
-footer aside section {
+/* sidebar */
+
+aside section {
   padding: 10px 0;
   margin-top: 20px;
 }
 
-footer aside section:first-child {
+aside section:first-child {
   border: 0;
   padding-top: 0;
 }
 
-footer aside section span {
+aside section span {
   display: block;
   margin-bottom: 3px;
   line-height: 1;
 }
 
-footer section.user_info {
+section.user_info {
   padding-bottom: 10px;
   margin-top: 20px;
   text-align: center;
 }
 
-footer section.user_info .gravatar {
+section.user_info .gravatar {
   float: none;
   max-width: 70px;
 }
 
-footer section.user_info h1 {
+section.user_info h1 {
   font-size: 1.4em;
   letter-spacing: -1px;
   margin-bottom: 3px;
   margin-top: 15px;
 }
 
-footer .gravatar {
+.gravatar {
   float: left;
   margin-right: 10px;
   max-width: 50px;
   border-radius: 50%;
 }
 
-footer input,
-footer textarea,
-footer select,
-footer .uneditable-input {
+.stats {
+  overflow: auto;
+  margin-top: 0;
+  padding: 0;
+}
+
+.stats a {
+  float: left;
+  padding: 0 10px;
+  text-align: center;
+  width: 33%;
+  border-left: 1px solid #eeeeee;
+  color: gray;
+}
+
+.stats a:first-child {
+  padding-left: 0;
+  border: 0;
+}
+
+.stats a:hover {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.stats strong {
+  display: block;
+  font-size: 1.2em;
+  color: black;
+}
+
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+}
+
+.user_avatars .gravatar {
+  margin: 1px 1px;
+}
+
+.user_avatars a {
+  padding: 0;
+}
+
+.users.follow {
+  padding: 0;
+}
+
+/* forms */
+
+#follow_form button {
+  margin: 0 auto;
+  display: block;
+  margin-top: 25px;
+}
+
+/* forms */
+
+input,
+textarea,
+select,
+.uneditable-input {
   border: 1px solid #bbb;
   margin-bottom: 15px;
 }
 
-footer input {
+input {
   height: auto !important;
 }
 
-footer .panel {
+.panel {
   margin-top: 50px;
 }
 
